@@ -1,0 +1,107 @@
+  <ion-view hide-tabs title="trivia" hide-nav-bar="true" id="page14" style="background-color:#000000;">
+  <ng-include src="headerUrl()" onload="loadDetails()"></ng-include>
+  <ion-content class="content-padding" padding="true" style="background: url(img/background_image.png) no-repeat center;background-size:cover;background-position: 65% 0;" class="manual-ios-statusbar-padding" scroll="true" >
+
+<!--<div class="row">
+      <h5 class="col-67" id="mainMenu-heading23 common-fts" style="color:#FFFFFF;font-weight:900; font-size: 17px; padding-left: 30px;" ng-click="openModal()"> Welcome {{username}}! </h5>
+    <div  class="col-33 right-text" ng-click="openHelpModal()">
+      <img class="i-con" style="margin-top:10px;	" src="./img/i.png"></div>
+
+   </div>-->
+
+
+
+
+
+
+
+
+
+   <ion-list id="mainMenu-list14" ng-repeat="data in sessionData">
+      <ion-item class="odd common item-icon-right item-floating-label" id="mainMenu-list-item12" ng-click="gotoSession(data.name)">
+ <img class='main-img-custom' src="{{data.image}}">
+        <span style="color:#FFFFFF">{{data.name}}</span>
+
+        <i class="fa fa-angle-right" style="color:#FFFFFF"></i>
+      </ion-item>
+    </ion-list>
+
+
+
+
+	<script id="mainmenuhelp.html" type="text/ng-template">
+              <div class="modal image-modal transparent"
+                    style="opacity:0.9;background-color:black;" >
+                 <p align="right" style="margin-top: 4%"><i class="fa fa-times" aria-hidden="true" style="color:white;font-size:25px;" ng-click="closeModal()"></i></p>
+
+           <div style=" border: 1px solid #474d64;
+              padding: 7% 0% 15%;
+              margin:22% auto 0%;
+
+              width: 92%;" align="center" >
+                    <p style="color:white;font-size:15px; padding: 15px;"><b>{{mainmenu_help}}</b></p>
+          <div class="continue-btn">
+		  <button class="lts-go" style="width:94%;background-color:rgba(64, 72, 82, 0.8) !important;border-color: #f9be02;color:white;height: 40px; font-size: 18px !important;" ng-click="closeModal()"><b>Okay</b></button>
+          </div>
+          </div>
+
+
+              </div>
+          </script>
+
+
+
+
+	<script id="t-steps.html" type="text/ng-template" >
+
+
+              <div class="modal image-modal transparent"
+                    style="opacity:0.9;background-color:black; padding-top: 40px;" >
+
+                    <!-- <p align="right" style=" margin-top:10%;"></p> -->
+
+					 <div style="width:100%;  " align="center" > </br></br>
+					 <ion-slide-box on-slide-changed="slideChanged(index)"
+                               show-pager="false">
+                  <ion-slide ng-repeat="oImage in aImages" >
+                    <img ng-src="{{oImage.src}}" height="280" width="280" style="border-radius:50%;border-color: yellow;" border="5"/>
+
+                  </ion-slide>
+                </ion-slide-box>
+
+         <div class="dot-sliderz">
+
+
+					 <span class={{class1}} ng-click="slideChanged(0)">&nbsp;</span>
+           <span class={{class2}} ng-click="slideChanged(1)">&nbsp;</span>
+           <span class={{class3}} ng-click="slideChanged(2)">&nbsp;</span>
+
+           </div>
+                    </br>
+					<p style="color:#fff;font-size:18px; padding-top:2px; font-weight: 900;"> {{step_Num}} </p>
+					<p style="color:#fff; font-size:14px; width:90%; line-height:25px;"> {{desc}}</p>
+					</div>
+
+
+
+
+
+                 <div class="skip-txt">
+                      <p ng-click="skipModal()" style="color: white;
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    bottom: 18px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    font-weight: 600;"><u>Skip</u></p>
+                 </div>
+              </div>
+
+          </script>
+
+
+
+  </ion-content>
+</ion-view>

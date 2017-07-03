@@ -1,0 +1,31 @@
+<ion-view hide-tabs padding="true" title="training-videos" hide-nav-bar="true" id="page14" style="background-color:#000000;">
+<!--<ng-include src="headerUrl()" onload="loadDetails()"></ng-include>-->
+  <ion-content class="content-padding" padding="true" style="background: url(img/background_image.png) no-repeat center;background-size:cover;background-position: 65% 0;" class="manual-ios-statusbar-padding" scroll="true" ng-init="loadImages()" >
+  <div align="center" class="animated infinite flash">
+<span>page is under construction!</span></div>
+
+<!-- this is to display the image in a grid format for the gallery like look and feel -->
+		
+            <div class="row" ng-repeat="image in images" ng-if="$index % 2 === 0">
+
+                <div class=" col col-100" ng-if="$index < images.length" ng-click = "openModal(images[$index].src)">
+                    <iframe ng-src="{{images[$index].src}}" frameborder="0" allowfullscreen  width="100%" ></iframe>
+                </div>
+                 <div class=" col col-100" ng-if="$index + 1 < images.length" ng-click = "openModal(images[$index + 1].src)">
+                    <iframe ng-src="{{images[$index + 1].src}}" frameborder="0" allowfullscreen  width="100%"></iframe>
+                </div>
+               
+               
+        </div>
+
+
+<script id="video-modal.html" type="text/ng-template">
+                        <div class="modal" ng-click="closeModal()">
+                        <ion-content>
+                        <iframe ng-src="{{imgUrl}}" frameborder="0"   width="100%"></iframe>
+                        </ion-content>
+                        </div>
+                    </script>
+
+</ion-content>
+</ion-view>

@@ -1,0 +1,40 @@
+<ion-content padding id="page2" style="background-image: url(img/background_image.png); background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 65% 0;" no-bounce class="manual-ios-statusbar-padding custom-padding" scroll="false">
+  <div class="spacer" style="width: 300px; height: 1px;"></div>
+    <h1 id="login-heading2" style="color:#fff;font-weight:600;text-align:center;"><img src="./img/Logo.png" style="height:80px;width:105px;"></h1>
+    <form id="myForm" class="list" ng-submit="login(data.username, data.password)" ng-controller="LoginCtrl" novalidate>
+     <div class="spacer" style="width: 300px; height: 3px;"></div>
+      <h5 id="login-heading4" style="color:black;text-align:center; font-weight: 900; font-size:16px;">Please login</h5>
+      <label class="item item-input item-floating-label" id="login-input1" style="">
+        <input type="text" no-special-char limit-char limit="12" ng-trim="true" placeholder="Username" ng-model="data.username" style="height:1.3em;color:#FFFFFF" required><!--ng-keypress="limitKeypress($event,data.username,12)"-->
+      </label>
+    <div id="login-markdown3" style="text-align:right;" class="show-list-numbers-and-dots" >
+      <p style="color:black;" ng-click="forget_Username()">Forgot Username?</p>
+    </div>
+
+
+      <label class="item item-input item-floating-label" id="login-input2">
+        <input type="password" placeholder="Password" limit-char limit="16" ng-model="data.password"  style="height:1.3em;color:#FFFFFF"  ng-trim="true" required ><!--ng-keydown="checkPassword($event,data.password)"-->
+      </label>
+    <div id="login-markdown4" style="text-align:right;" class="show-list-numbers-and-dots">
+      <p style="color:black" ng-click="forget_Password()">Forgot Password?</p>
+    </div>
+
+    <div id="fb-root"></div>
+    <button type="submit" id="login-button3" style="font-size:18px; background-color: #C0C0C0;color:#FFFFFF;border-radius:0px 0px 0px 0px;" class="transparent_button button button-light button-small button-block button-clear"   >Login</button>
+  <!--<span style="color:white;" ng-click="fbdetails()" ng-model="fbdata">fdetails</span>-->
+      </form>
+    <h4 id="login-heading3" style="color:#FFFFFF;font-weight:300;text-align:center;" >OR</h4>
+    <div class="spacer" height="5px;"></div>
+    <button id="login-button4" style="font-weight:500; font-size:18px;" class="button button-positive button-small button-block" ng-click="fbLogin()">
+    <i class="fa fa-facebook-official" aria-hidden="true"></i>Login with Facebook</button>
+    <div style="width=100%">
+    <span style=" font-size:11px;color:#c6c6c6">By signing in, you accept our <span ng-click="openterms()"><u>Terms and Conditions,</u></span>&nbsp;<span ng-click="gotoRulesLoader()"><u>Rules</u></span>&nbsp;&amp;&nbsp;<span ng-click="openprivacy()"><u>Data Privacy Policy</u></span></span><br>
+  </div>
+    <div class="spacer" style="width: 300px; height: 80px;"></div>
+    <div id="login-markdown6" style="text-align:center;" class="show-list-numbers-and-dots" ng-click="gotoSignup()">
+      <p style=" font-size:11px;color:#FFFFFF;line-height: 0.1;" >New here? <u>Create your account.</u></p>
+    </div>
+
+</ion-content>

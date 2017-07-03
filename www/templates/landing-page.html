@@ -1,0 +1,34 @@
+<ion-content padding id="page1" style="background-image: url(img/background_image.png); background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 65% 0;" no-bounce>
+   
+  <!--  <div style="width:100%;  " align="center">  
+    	<ion-slide-box on-slide-changed="slideHasChanged($index)">
+ 
+	  		<ion-slide ng-repeat="image in images">
+		    	<img ng-src = "{{image.url}}" height="280" width="280" style="border-radius:50%;border-color: yellow;" border="5">
+		  	</ion-slide>
+ 	</div>-->
+
+ 	 <div class="spacer" style="width: 300px; height: 210px;"></div>
+    <b><h1 id="loginOrSignup-heading1" style="color:#FFFFFF;font-weight:600;text-align:center;"><img class="img-responsive" style="width: 25%;" src="./img/Logo.png"></h1></b>
+    <div class="spacer" style="width: 300px; height: 49px;"></div>
+    <div id="loginOrSignup-markdown16" style="text-align:center;" class="show-list-numbers-and-dots custom-padding">
+      <p style="margin-top:0%;color:black;font-size:13px;">Already a CNS Member?
+<div style="padding: 16px!important;margin-top: -18px;" >
+<button  class="button button-full button-assertive ink" ng-click="gotoLogin()">Login</button>
+</div>
+
+<!--   <button style="border-radius: 0px; margin: 2px 0px;" class="button button-full button-assertive ink" ng-click="gotoLogin()"><a  id="loginOrSignup-button1" style="display:block;color:#FFFFFF;" class="button button-dark  button-block button-clear" >Login</a></button>-->
+    <div class="spacer" style="width: 300px; height: 20px;margin-top: -18px;"></div>
+      <p style="margin-top:0%;color:black;font-size:13px; margin:2px;">New to CNS?
+    
+    </p>
+    <div style="padding: 16px!important;margin-top: -18px;" >
+    <button  class="button button-full button-assertive ink" ng-click="gotoSignup()">Signup</button></div>
+    </div>
+
+
+		</ion-slide-box>
+ 
+    </ion-content>
