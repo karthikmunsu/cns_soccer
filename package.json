@@ -1,17 +1,93 @@
 {
-  "name": "CNSSOCCER",
-  "version": "1.1.1",
-  "description": "CNS SOCCER",
-  "dependencies": {
-    "gulp": "^3.5.6",
-    "gulp-sass": "^2.0.4",
-    "gulp-concat": "^2.2.0",
-    "gulp-minify-css": "^0.3.0",
-    "gulp-rename": "^1.2.0"
-  },
-  "devDependencies": {
-    "bower": "^1.3.3",
-    "gulp-util": "^2.2.14",
-    "shelljs": "^0.3.0"
-  }
+    "name": "trenzr",
+    "version": "1.1.1",
+    "description": "trenzr: An Ionic project",
+    "dependencies": {
+        "cordova-plugin-admob-free": "^0.6.1",
+        "cordova-plugin-console": "^1.0.7",
+        "cordova-plugin-device": "^1.1.6",
+        "cordova-plugin-document-viewer": "^0.8.1",
+        "cordova-plugin-facebook4": "^1.7.4",
+        "cordova-plugin-inapppurchase": "^1.1.0",
+        "cordova-plugin-network-information": "^1.3.3",
+        "cordova-plugin-splashscreen": "^4.0.3",
+        "cordova-plugin-statusbar": "^2.2.3",
+        "cordova-plugin-whitelist": "^1.3.2",
+        "cordova-plugin-x-socialsharing": "^5.1.8",
+        "cordova-promise-polyfill": "0.0.2",
+        "gulp": "^3.5.6",
+        "gulp-concat": "^2.2.0",
+        "gulp-minify-css": "^0.3.0",
+        "gulp-rename": "^1.2.0",
+        "gulp-sass": "^2.0.4",
+        "ionic-plugin-keyboard": "^2.2.1",
+        "moment-timezone": "^0.5.11",
+        "phonegap-plugin-mobile-accessibility": "^1.0.5"
+    },
+    "devDependencies": {
+        "@ionic/cli-plugin-gulp": "1.0.1",
+        "@ionic/cli-plugin-ionic1": "2.0.0",
+        "bower": "^1.3.3",
+        "gulp-util": "^2.2.14",
+        "shelljs": "^0.3.0"
+    },
+    "cordovaPlugins": [
+        "cordova-plugin-whitelist",
+        "cordova-plugin-statusbar",
+        "cordova-plugin-console",
+        "cordova-plugin-device",
+        "cordova-plugin-splashscreen",
+        "cordova-plugin-inapppurchase",
+        "ionic-plugin-keyboard",
+        "cordova-plugin-x-socialsharing@5.0.11"
+    ],
+    "cordovaPlatforms": [],
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-admob-free": {},
+            "cordova-plugin-console": {},
+            "cordova-plugin-device": {},
+            "cordova-plugin-document-viewer": {},
+            "cordova-plugin-facebook4": {
+                "APP_ID": "278801972536044",
+                "APP_NAME": "appp23"
+            },
+            "cordova-plugin-inapppurchase": {
+                "APP_ID": "278801972536044",
+                "APP_NAME": "appp23"
+            },
+            "cordova-plugin-network-information": {
+                "APP_ID": "278801972536044",
+                "APP_NAME": "appp23"
+            },
+            "cordova-plugin-splashscreen": {
+                "APP_ID": "278801972536044",
+                "APP_NAME": "appp23"
+            },
+            "cordova-plugin-statusbar": {
+                "APP_ID": "278801972536044",
+                "APP_NAME": "appp23"
+            },
+            "cordova-plugin-whitelist": {
+                "APP_ID": "278801972536044",
+                "APP_NAME": "appp23"
+            },
+            "cordova-plugin-x-socialsharing": {
+                "APP_ID": "278801972536044",
+                "APP_NAME": "appp23"
+            },
+            "cordova-promise-polyfill": {
+                "APP_ID": "278801972536044",
+                "APP_NAME": "appp23"
+            },
+            "ionic-plugin-keyboard": {
+                "APP_ID": "278801972536044",
+                "APP_NAME": "appp23"
+            },
+            "phonegap-plugin-mobile-accessibility": {
+                "APP_ID": "278801972536044",
+                "APP_NAME": "appp23"
+            }
+        }
+    }
 }

@@ -1,7 +1,11 @@
 {
-  "name": "HelloIonic",
+  "name": "trenzr",
   "private": "true",
   "devDependencies": {
-    "ionic": "driftyco/ionic-bower#1.3.3"
+    "ionic": "driftyco/ionic-bower#1.3.2",
+    "platform.js": "platform#^1.3.3"
+  },
+  "dependencies": {
+    "ionic-datepicker": "^1.2.1"
   }
 }

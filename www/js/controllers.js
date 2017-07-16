@@ -619,7 +619,7 @@ $scope.images = [];
     }
     console.log($scope.images);
 
-    $ionicModal.fromTemplateUrl('video-modal.html', function (modal) { // this is the function used to display the modal on click of the images in the 4*4 coloumns
+    /*$ionicModal.fromTemplateUrl('video-modal.html', function (modal) { // this is the function used to display the modal on click of the images in the 4*4 coloumns
                 $scope.gridModal = modal;
             }, {
                 scope: $scope,
@@ -634,7 +634,7 @@ $scope.images = [];
             }
             $scope.closeModal = function () {
                 $scope.gridModal.hide();
-            }
+            }*/
 
 $scope.sliderImages = [];
 $scope.sliderImages.push({src: 'img/slide1.jpg'});
